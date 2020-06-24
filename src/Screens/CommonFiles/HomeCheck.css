@@ -1,0 +1,238 @@
+@media screen and (min-width: 750px) {
+    .header{
+        display: flex;
+        align-items: stretch;
+        margin: 0px 16px;
+        /* align-items: flex-end;
+            flex-direcction: column
+            justify-content: space-between/space-around */
+    }
+    .wrapper{
+        display: flex;
+        align-items: stretch;
+    }
+    .posts{
+        flex: 2;
+        margin: 24px 8px;
+        /* padding: 16px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .posts .SinglePost{
+        margin: 16px;
+        padding: 16px;
+        width: 65%;
+        height: auto;
+    }
+    .CommentSection {
+        /* border: 1px solid black; */
+        color: white;
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .CommentSection .SingleComment{
+        width: 40%;
+        height: auto;
+    }
+    .historyPost h3{
+        width: 75%;
+    }
+  }
+@media screen and (min-width: 400) {
+
+    .wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .posts{
+        /* flex: 1; */
+        margin: 24px 8px;
+        /* padding: 16px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .posts .SinglePost{
+        width: 100%;
+        height: auto;
+    }
+    .CommentSection {
+        /* border: 1px solid black; */
+        color: white;
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .CommentSection .SingleComment{
+        width: 100%;
+        height: auto;
+        margin: 12px;
+    }
+    .historyPost h3{
+        width: 100%;
+    }
+}
+.header{
+    background-color: white;
+}
+body{
+    font-family: Courier;
+    font-weight: bold;
+    margin: 24px 16px;
+}
+.ProfileImage{
+    margin: 8px 0px;
+    width: 150px;
+    min-height: 150px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+.box-1{
+    flex: 1;
+    /*order for odering box by number 1,2,3,...;
+     flex-basis is for width*/
+}
+.box-1 pre{
+    font-size: larger;
+    padding: 5px;
+}
+.box-2{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-2 a {
+    margin: 8px;
+}
+.contactImage{
+    height: 24px;
+    width: 24px;
+}
+.userinfo{
+    padding: 5px;
+}
+.userinfo pre{
+    margin: 16px;
+    padding: 16px;
+    min-height: 120px;
+}
+pre
+{
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: keep-all;       /* Internet Explorer 5.5+ */
+    margin: 8px 16px;
+    min-width: 0px;
+    max-width: 100%;
+    background: #eee;    
+    font-size: larger;
+}
+.historyPost{
+    flex: 1;
+    margin: 24px;
+    color: #5B2C6F;
+}
+/* .historyPost h2{
+    border: 1px solid black;
+} */
+.historyPost p{
+    background-color: white;
+    color: #8E44AD ;
+    font-weight: lighter;
+    margin: 0px 16px 0px 16px;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+.historyPost a{
+    text-decoration: none;
+}
+.posts .SinglePost{
+    margin-top: 16px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* padding: 16px; */
+    background-color: white;
+    font-family: sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+}
+.SinglePost .postContent{
+    flex-basis: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.postContent h3{
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: large;
+}
+.postContent pre{
+    background-color: white;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: lighter;
+    font-size: small;
+    font-family: sans-serif;
+}
+.postContent img{
+    width: 100%;
+    height: 70%;
+}
+.SinglePost .postButtons{
+    flex-basis: 100%;
+    display: flex;
+}
+.postButtons button{
+    align-self: flex-end;
+    background-color: white;
+    outline: none;
+    border: 0px;
+    flex-basis: 10%;
+    height: 32px;
+    width: 32px;
+}
+.loader{
+    margin: 16px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.SingleComment{
+    margin: 8px;
+    padding: 4px 16px;
+    color: #3498DB ;
+    background-color: white;
+    height: auto;
+    border-radius: 16px;
+    font-family: cursive;
+    font-weight: lighter;
+    box-shadow: 0 0 5px 2px #566573;
+    /* border: 1px solid black; */
+    text-align: left;
+}
+.headerStyle{
+    color: #2471A3;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+.inputCommentSec{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.inputCommentSec button{
+    align-self: flex-start
+}
